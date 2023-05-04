@@ -1,0 +1,102 @@
+{
+  "people": [
+    {
+      "id": 1,
+      "name": "Buffy Summers",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "name": "Willow Rosenberg",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 3,
+      "name": "Xander Harris",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 4,
+      "name": "Rupert Giles",
+      "image": "https://via.placeholder.com/150"
+    },
+    { "id": 5, "name": "Angel", "image": "https://via.placeholder.com/150" },
+    {
+      "id": 6,
+      "name": "Cordelia Chase",
+      "image": "https://via.placeholder.com/150"
+    },
+    { "id": 7, "name": "Spike", "image": "https://via.placeholder.com/150" },
+    {
+      "id": 8,
+      "name": "Anya Jenkins",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 9,
+      "name": "Tara Maclay",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 10,
+      "name": "Faith Lehane",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 11,
+      "name": "Daniel Osbourne",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 12,
+      "name": "Riley Finn",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 13,
+      "name": "Dawn Summers",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 14,
+      "name": "Anya Jenkins",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 15,
+      "name": "Tara Maclay",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 16,
+      "name": "Faith Lehane",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 17,
+      "name": "Daniel Osbourne",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 18,
+      "name": "Riley Finn",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 19,
+      "name": "Dawn Summers",
+      "image": "https://via.placeholder.com/150"
+    }
+  ],
+  "places": [
+    "Sunnydale",
+    "The hellmouth",
+    "The bronze",
+    "The library",
+    "The graveyard",
+    "The master's lair",
+    "The initiative",
+    "The magic box",
+    "The high school ect"
+  ]
+}
