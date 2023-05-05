@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Header: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <div className="relative">
       <img
@@ -27,3 +27,4 @@ export const Header: React.FC = () => {
     </div>
   );
 };
+export default Header;
