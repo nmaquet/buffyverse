@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Card from "./components/Card";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import people from "./people.json";
-import { Header } from "./components/Header";
+
 function App() {
   return (
-    <div className="py-24 sm:py-32 bg-fixed bg-cover bg-center bg-[url('src/assets/944296.jpg')]">
+    <div className="pt-6 bg-fixed bg-cover bg-center bg-[url('src/assets/944296.jpg')]">
       <Header />
       <div className="px-6 mx-auto text-center max-w-7xl lg:px-8">
         <ul
@@ -16,6 +18,7 @@ function App() {
           ))}
         </ul>
       </div>
+      <Footer />
     </div>
   );
 }
