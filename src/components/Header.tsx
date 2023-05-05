@@ -2,16 +2,27 @@ import React from "react";
 
 export const Header: React.FC = () => {
   return (
-    <div className="flex flex-row justify-between">
+    <div className="relative">
       <img
-        className="justify-center opacity-50 place-self-center"
+        className="absolute mr-72 right-80 opacity-80"
         src="src/assets/moon.png"
         alt="Buffy the Vampire Slayer"
       />
-      <div className="max-w-2xl mx-auto">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Buffy the Vampire Slayer
-        </h2>
+      <img
+        className="w-1/3 mx-auto mix-blend-lighten invert"
+        src="src/assets/BF-0797b-1.png"
+        alt="Buffy the Vampire Slayer"
+      />
+      <div className="absolute top-4 right-6">
+        <a href="/#" className="p-4 text-2xl text-white underline">
+          Doc
+        </a>
+        <a
+          href="/#"
+          className="p-4 text-2xl text-white underline cursor-pointer"
+        >
+          About
+        </a>
       </div>
     </div>
   );
