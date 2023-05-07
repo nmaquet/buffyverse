@@ -1,25 +1,12 @@
-import { SpeciesType } from "../interfaces";
-
-const Species = (species: SpeciesType) => {
-  console.log(species);
-  const s = [
-    "werewolf",
-    "demon",
-    "key",
-    "mr-pointy",
-    "watcher",
-    "human",
-    "bite",
-  ];
+const Species = ({ species }: any) => {
   return (
-    <div className="flex">
-      <img className="w-10" src={`src/assets/icons/${s[0]}.png`} alt="stack" />
-      <img className="w-10" src={`src/assets/icons/${s[1]}.png`} alt="stack" />
-      <img className="w-10" src={`src/assets/icons/${s[2]}.png`} alt="stack" />
-      <img className="w-10" src={`src/assets/icons/${s[3]}.png`} alt="stack" />
-      <img className="w-10" src={`src/assets/icons/${s[4]}.png`} alt="stack" />
-      <img className="w-10" src={`src/assets/icons/${s[5]}.png`} alt="stack" />
-      <img className="w-10" src={`src/assets/icons/${s[6]}.png`} alt="stack" />
+    <div className="flex justify-center">
+      <img
+        className="w-10"
+        src={`src/assets/icons/${species}.png`}
+        alt="stack"
+      />
+      <div className="text-4xl font-longCang">{species}</div>
     </div>
   );
 };
