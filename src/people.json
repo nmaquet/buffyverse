@@ -70,7 +70,7 @@
       "name": "Rupert Giles",
       "imageUrl": "https://static.wikia.nocookie.net/buffy/images/9/97/1rupert_giles.jpg/revision/latest/scale-to-width-down/700?cb=20210221035237",
       "age": 45,
-      "species": "Human",
+      "species": "Watcher",
       "dated": ["Jenny Calendar"],
       "firstAppearance": {
         "season": 1,
@@ -137,6 +137,19 @@
       "age": 24,
       "species": "Human",
       "dated": ["Buffy Summers"],
+      "firstAppearance": {
+        "season": 4,
+        "episode": 1,
+        "location": ["UC Sunnydale"]
+      }
+    },
+    {
+      "id": 13,
+      "name": "Faith Lehane",
+      "imageUrl": "https://i.imgur.com/cHzE4HA.jpg",
+      "age": 24,
+      "species": "Slayer",
+      "dated": ["Xander Harris"],
       "firstAppearance": {
         "season": 4,
         "episode": 1,
