@@ -9,17 +9,20 @@ const Header: React.FC = () => {
         alt="Buffy the Vampire Slayer"
       />
       <img
-        className="absolute w-1/3 mt-20 ml-64 opacity-80 mix-blend-light"
-        src="src/assets/header/title.png"
+        className="absolute w-1/3 mt-20 ml-64"
+        src="src/assets/header/title-noclouds.png"
         alt="Buffy the Vampire Slayer"
       />
       <div className="absolute top-4 right-6">
-        <a href="/#" className="p-4 text-2xl text-white underline">
+        <a
+          href="/doc"
+          className="p-4 text-2xl text-white underline font-lacquer"
+        >
           Doc
         </a>
         <a
-          href="/#"
-          className="p-4 text-2xl text-white underline cursor-pointer"
+          href="/about"
+          className="p-4 text-2xl text-white underline cursor-pointer font-lacquer"
         >
           About
         </a>
