@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import RootLayout from "./RootLayout";
-import Page from "./Pages/Page";
+import Docs from "./Pages/Docs";
+import About from "./Pages/About";
 import Deck from "./Pages/Deck";
 import { loader } from "./components/Loader";
 
@@ -14,13 +15,17 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Deck />} loader={loader} />
-      <Route path="/about" element={<Page />} />
+      <Route path="/:deckId" element={<div />} loader={loader} />
+      <Route path="/episode/:id" element={<div />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/doc" element={<Docs />} />
+      <Route path="*" element={<div>No Match</div>} />
     </Route>
   )
 );
 
 function App() {
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={router} fallbackElement={<p>Loading</p>} />;
 }
 
 export default App;

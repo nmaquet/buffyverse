@@ -1,5 +1,5 @@
 import { frontendSpec, demonstrate, skills } from "../about.json";
-const Page = ({ title = "About" }) => {
+const About = ({ title = "About" }) => {
   return (
     <div className="bg-[url('src/assets/frames/texture.jpg')] w-2/3 h-2/3 rounded-3xl bg-cover p-3">
       <div className="p-3 m-auto border-2 rounded-3xl border-amber-400">
@@ -20,4 +20,4 @@ const Page = ({ title = "About" }) => {
   );
 };
 
-export default Page;
+export default About;
