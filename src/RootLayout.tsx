@@ -5,7 +5,9 @@ const RootLayout: React.FC = () => {
   return (
     <div className="pt-6 bg-fixed bg-cover bg-center bg-[url('src/assets/header/sky.jpg')]">
       <Header />
-      <Outlet />
+      <div className="flex justify-center mb-52">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );

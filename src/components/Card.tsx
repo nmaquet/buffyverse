@@ -23,25 +23,28 @@ const Card: React.FC<Character> = ({
     kills: [{ name: "Angel", id: 2 }],
     RoseFromTheDead: [{ name: "Master", id: 90 }],
   };
+
   return (
-    <div
-      key={id}
-      className="bg-[url('src/assets/frames/texture.jpg')] bg-cover rounded-3xl p-1 shadow-xl"
-    >
-      <div className="flex justify-center m-2 border-2 border-amber-400 rounded-3xl">
-        <div className="flex-col">
-          <div className="p-2 mb-4 text-4xl text-black font-almendra">
+    <div className="w-[300px] h-[470px] group perspective">
+      <div className="relative w-full h-full duration-1000 preserve-3d group-hover:my-rotate-y-180 bg-[url('src/assets/frames/texture.jpg')] bg-cover rounded-3xl">
+        <div className="absolute w-full h-full p-1 border-2 backface-hidden border-amber-400 rounded-3xl ">
+          <div className="p-2 m-2 text-4xl text-black font-almendra">
             {name}
           </div>
-          {false && (
+          <div className="border-2 border-amber-400 rounded-3xl">
             <img
-              className="mx-auto border-t-2 border-amber-400 mix-blend-multiply rounded-b-3xl"
+              className="mx-auto mix-blend-multiply rounded-3xl"
               src="https://flxt.tmsimg.com/assets/p7896403_b1t_v9_aa.jpg"
               alt=""
             />
-          )}
-          {true && (
-            <div className="m-2">
+          </div>
+        </div>
+        <div className="absolute w-full h-full overflow-hidden border-2 my-rotate-y-180 backface-hidden border-amber-400 rounded-3xl">
+          <div className="flex-col ">
+            <div className="p-2 mt-2 text-4xl text-black font-almendra">
+              {name}
+            </div>
+            <div className="mt-4">
               <Age age={age} />
               <Species species={species} />
               <Debut debut={debut} />
@@ -51,10 +54,10 @@ const Card: React.FC<Character> = ({
                 <Accordion type="Loves" options={moreDetails.loves} />
               </div>
             </div>
-          )}
-          {/* <div className="p-2 text-2xl text-black border-t-2 border-amber-400 font-almendra">
-            She Who Hangs Out in Graveyards
-          </div> */}
+            <div className="p-2 text-2xl text-black border-t-2 border-amber-400 font-almendra">
+              She Who Hangs Out in Graveyards
+            </div>
+          </div>
         </div>
       </div>
     </div>
