@@ -28,6 +28,9 @@ export default {
         ".backface-hidden": {
           backfaceVisibility: "hidden",
         },
+        ".bg-texture": {
+          backgroundImage: "url('src/assets/frames/texture.jpg')",
+        },
       };
 
       addUtilities(newUtilities, ["hover"]);
