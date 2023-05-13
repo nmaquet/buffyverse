@@ -4,31 +4,37 @@ interface Location {
 }
 
 export interface Character {
-  id: number;
   name: string;
-  url?: string;
-  age?: number;
-  isAlive: boolean;
-  species:
-    | "Human"
-    | "Vampire"
-    | "Demon"
-    | "Spirit"
-    | "Robot"
-    | "Werewolf"
-    | "Witch"
-    | "Zombie"
-    | "God"
-    | "Other";
-  dated?: string[];
-  firstAppearance: {
-    season: number;
-    episode: number;
-    location: Location;
+  alias?: string | string[];
+  catchphrase?: string[];
+  urlImage?: string;
+  occupation?: string;
+  affiliation?: string[];
+  species?: string;
+  birthplace?: string;
+  birthdate?: string;
+  nationality?: string;
+  abilities?: string[];
+  equipment?: string[];
+  relationships?: [
+    { name: string; relationship_type: string; status?: string }
+  ];
+  appearance?: {
+    hair_color: string;
+    eye_color: string;
+    height: string;
+    weight: string;
+    distinctive_features: string;
   };
-  funFact?: string[];
-  tags?: string[];
-  onClick: (id: number) => void;
+  personality?: {
+    traits: string[];
+    likes: string[];
+    dislikes: string[];
+    strengths: string[];
+    weaknesses: string[];
+  };
+  backstory?: string;
+  notes?: string;
 }
 
 interface Episode {
