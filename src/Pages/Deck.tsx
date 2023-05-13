@@ -1,20 +1,54 @@
+// import axios from "axios";
+import { Link } from "react-router-dom";
 import Card from "../components/Card";
-import Filters from "../components/Filter";
-import { people } from "../people.json";
+import { people as mock } from "./people.json";
+import { useEffect, useState } from "react";
+import { Filters } from "../components/Filter";
 
+// const endpoint =
+//   "https://en.wikipedia.org/wiki/List_of_Buffy_the_Vampire_Slayer_characters";
+// const params = {
+//   origin: "*",
+// };
+
+// const getWiki = async () => {
+//   const wiki = await axios.get(endpoint);
+//   return wiki;
+// };
+export type Filter = {
+  species: string;
+  icon: string;
+};
+
+const options: Filter[] = [
+  { species: "Human", icon: "👩‍🦱" },
+  { species: "Vampire", icon: "🧛" },
+  { species: "Werewolf", icon: "🐺" },
+  { species: "Witch", icon: "🧙" },
+  { species: "Big Bad", icon: "👹" },
+  { species: "Demon", icon: "👿" },
+  { species: "Watcher", icon: "👓" },
+  { species: "Slayer", icon: "🗡️" },
+  { species: "Other", icon: "👽" },
+];
 const Deck = () => {
+  const [people, setPeople] = useState(mock);
+
+  const filterOnSpecies = (species: string) => {
+    const filtered = mock.filter(({ species: spec }) => spec === species);
+    setPeople(filtered);
+  };
   return (
-    <div className="px-6 mx-auto text-center max-w-7xl lg:px-8">
-      <Filters />
-      <ul
-        role="list"
-        className="grid max-w-2xl grid-cols-1 gap-6 mx-auto sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-20"
-      >
-        {people.map((person) => (
-          <Card {...person} />
+    <>
+      <Filters setFilter={filterOnSpecies} options={options} />
+      <div className="grid grid-cols-3 gap-8 px-8 text-center animate-fadeUp animate-fadeDown max-w-7xl">
+        {people.map((person, i) => (
+          <Link to={person.name} key={i}>
+            <Card {...person} />
+          </Link>
         ))}
-      </ul>
-    </div>
+      </div>
+    </>
   );
 };
 
