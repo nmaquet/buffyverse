@@ -9,14 +9,14 @@ import RootLayout from "./RootLayout";
 import Docs from "./Pages/Docs";
 import About from "./Pages/About";
 import Deck from "./Pages/Deck";
+import Character from "./Pages/Charater";
 import { loader } from "./components/Loader";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Deck />} loader={loader} />
-      <Route path="/:deckId" element={<div />} loader={loader} />
-      <Route path="/episode/:id" element={<div />} />
+      <Route path="/:char" element={<Character />} loader={loader} />
       <Route path="/about" element={<About />} />
       <Route path="/doc" element={<Docs />} />
       <Route path="*" element={<div>No Match</div>} />
