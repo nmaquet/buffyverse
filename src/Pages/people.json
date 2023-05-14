@@ -1,8 +1,9 @@
 {
   "people": [
     {
+      "id": 1,
       "name": "Willow Rosenberg",
-      "alias": ["The Willow", "Will", "Red", "Willie"],
+      "alias": ["Willow"],
       "catchPhrase": [
         "Bored now.",
         "Oh my god.",
@@ -12,6 +13,7 @@
       "occupation": "Witch, Computer Programmer",
       "affiliations": ["Scooby Gang", "Slayerettes", "Wicca Group"],
       "species": "Human",
+      "speciesIcon": "witch",
       "gender": "Female",
       "birthdate": "October 23, 1980",
       "birthplace": "Sunnydale, California",
@@ -30,16 +32,19 @@
       ],
       "relationships": [
         {
+          "id": 10,
           "name": "Tara Maclay",
           "relationship_type": "Girlfriend",
           "status": "Deceased"
         },
         {
+          "id": 3,
           "name": "Xander Harris",
           "relationship_type": "Close friend and ally",
           "status": "Human"
         },
         {
+          "id": 2,
           "name": "Buffy Summers",
           "relationship_type": "Best friend and ally",
           "status": "Vampire Slayer"
@@ -79,6 +84,7 @@
       "notes": "Willow's magical abilities and technological expertise have saved the Scooby Gang on numerous occasions. Her relationship with Tara was groundbreaking for TV at the time and remains a beloved aspect of the show. Her struggle with addiction and subsequent redemption arc is considered one of the most powerful and impactful storylines in the Buffyverse."
     },
     {
+      "id": 2,
       "name": "Buffy Summers",
       "urlImage": "https://media.vogue.fr/photos/622f5a45bb237369ddf84063/2:3/w_2560%2Cc_limit/010_A7A08B57_137.jpg",
       "catchPhrase": [
@@ -108,6 +114,7 @@
       ],
       "relationships": [
         {
+          "id": 6,
           "name": "Angel",
           "relationship_type": "Former lover",
           "status": "Vampire with a soul"
@@ -118,6 +125,7 @@
           "status": "Vampire with a soul"
         },
         {
+          "id": 3,
           "name": "Xander Harris",
           "relationship_type": "Close friend and ally",
           "status": "Human"
@@ -130,6 +138,7 @@
       ]
     },
     {
+      "id": 3,
       "name": "Alexander Harris",
       "alias": ["Xander", "Zeppo"],
       "occupation": "Construction worker",
@@ -163,6 +172,7 @@
           "status": "Witch"
         },
         {
+          "id": 2,
           "name": "Buffy Summers",
           "relationship_type": "Close friend and ally",
           "status": "Vampire Slayer"
@@ -200,6 +210,7 @@
       "notes": "Xander's relationship with Anya was complex and ultimately tragic, but it was an important part of his character arc. He has a great sense of humor and often provides comic relief in tense situations, but he can also be surprisingly insightful and sensitive. His bravery and loyalty have saved the lives of his friends on numerous occasions."
     },
     {
+      "id": 4,
       "name": "Rupert Giles",
       "urlImage": "https://www.figurerealm.com/userimages/characterprofiles/2000/1806-1-5c01fab0a950a.jpg",
       "alias": ["Ripper"],
@@ -227,11 +238,7 @@
       ],
       "relationships": [
         {
-          "name": "Buffy Summers",
-          "relationship_type": "Ward and surrogate daughter",
-          "status": "Vampire Slayer"
-        },
-        {
+          "id": 11,
           "name": "Jenny Calendar",
           "relationship_type": "Romantic interest",
           "status": "Deceased"
@@ -242,6 +249,7 @@
           "status": "Human"
         },
         {
+          "id": 14,
           "name": "Joyce Summers",
           "relationship_type": "Friend and ally",
           "status": "Deceased"
@@ -272,6 +280,7 @@
       "notes": "Giles' relationship with Buffy was one of the most important and poignant relationships in the Buffyverse. He was a constant source of guidance and support for her throughout her journey as the Slayer, and his departure from Sunnydale in Season 6 was a major turning point for the series."
     },
     {
+      "id": 5,
       "name": "William the Bloody",
       "alias": ["Spike"],
       "occupation": "Vampire",
@@ -306,11 +315,13 @@
           "status": "Vampire"
         },
         {
+          "id": 2,
           "name": "Buffy Summers",
           "relationship_type": "Romantic interest",
           "status": "Vampire Slayer"
         },
         {
+          "id": 6,
           "name": "Angel",
           "relationship_type": "Enemy and occasional ally",
           "status": "Vampire with a soul"
@@ -347,6 +358,7 @@
       "notes": "Spike was one of the most complex and beloved characters in the Buffyverse, known for his witty one-liners, his intense and often tumultuous relationship with Buffy, and his redemption arc. He was initially introduced as a villain, but eventually became a fan favorite and a central character in the series."
     },
     {
+      "id": 6,
       "name": "Liam",
       "alias": ["Angel", "Angelus", "The Scourge of Europe"],
       "occupation": "Vampire with a soul",
@@ -377,6 +389,7 @@
       "equipment": ["Vampire teeth", "Leather coat"],
       "relationships": [
         {
+          "id": 2,
           "name": "Buffy Summers",
           "relationship_type": "Romantic interest and former lover",
           "status": "Vampire Slayer"
@@ -425,8 +438,9 @@
       "notes": "Angel was a fan-favorite character known for his brooding personality, his intense love for Buffy, and his struggle to atone for his past as a vampire. He was one of the few characters to receive his own spin-off series, Angel, which aired for five seasons."
     },
     {
+      "id": 7,
       "name": "Cordelia Chase",
-      "alias": ["Cordy", "Queen C"],
+      "alias": ["Queen C", "Cordy"],
       "occupation": "Actress, high school student, demon hunter, secretary, member of Angel Investigations",
       "affiliations": ["Scooby Gang", "Angel Investigations", "Wolfram & Hart"],
       "species": "Half-demon (part human, part demon)",
@@ -450,6 +464,7 @@
       "equipment": ["Crossbow", "Stake"],
       "relationships": [
         {
+          "id": 3,
           "name": "Xander Harris",
           "relationship_type": "Former crush",
           "status": "Human"
@@ -491,8 +506,9 @@
       "notes": "Cordelia was initially portrayed as a shallow and self-centered character, but gradually developed into a more complex and sympathetic character as the series progressed. She was known for her acerbic wit and her ability to cut through the BS."
     },
     {
+      "id": 8,
       "name": "Anya Jenkins",
-      "alias": ["Anyanka", "Aud", "Nancy"],
+      "alias": ["Anyanka"],
       "occupation": "Vengeance demon, member of the Scooby Gang, co-owner of the Magic Box",
       "affiliations": ["Scooby Gang", "Magic Box", "Vengeance demons"],
       "catchPhrase": [
@@ -516,11 +532,13 @@
       "equipment": ["Anya's power center", "Sword"],
       "relationships": [
         {
+          "id": 3,
           "name": "Xander Harris",
           "relationship_type": "Love interest and former fiance",
           "status": "Human"
         },
         {
+          "id": 2,
           "name": "Buffy Summers",
           "relationship_type": "Friend and ally",
           "status": "Slayer"
@@ -556,7 +574,8 @@
       "notes": "Anya was known for her sharp tongue and her blunt approach to life. She often made inappropriate or insensitive comments, but was ultimately a loyal friend to the Scooby Gang."
     },
     {
-      "name": "Daniel 'Oz' Osbourne",
+      "id": 9,
+      "name": "Daniel Osbourne",
       "alias": ["Oz"],
       "occupation": "Musician, Werewolf Hunter",
       "affiliations": ["Scooby Gang", "Dingoes Ate My Baby band"],
@@ -589,6 +608,7 @@
           "status": "Werewolf"
         },
         {
+          "id": 2,
           "name": "Buffy Summers",
           "relationship_type": "Friend and ally",
           "status": "Human"
@@ -616,8 +636,9 @@
       "notes": "Oz's departure from Sunnydale was due to the actor, Seth Green, leaving the show to pursue other projects. However, he returned for a guest appearance in the final season. Oz was a popular character among fans, in part due to his laid-back personality and dry sense of humor."
     },
     {
+      "id": 10,
       "name": "Tara Maclay",
-      "occupation": "Wiccan, Scooby Gang member",
+      "occupation": "Student at College",
       "affiliations": ["Scooby Gang", "Wicca group"],
       "species": "Human",
       "urlImage": "https://i.pinimg.com/550x/2b/59/02/2b590274be348800937e3f5e90f51451.jpg",
@@ -642,6 +663,7 @@
           "status": "Alive"
         },
         {
+          "id": 2,
           "name": "Buffy Summers",
           "relationship_type": "Friend and fellow Scooby Gang member",
           "status": "Alive"
@@ -671,6 +693,7 @@
       "notes": "Actress Amber Benson portrayed the character throughout her tenure on the show, and also co-wrote several episodes. Tara's death remains one of the most controversial and impactful moments in the Buffyverse."
     },
     {
+      "id": 11,
       "name": "Jenny Calendar",
       "occupation": "Computer science teacher, Technopagan",
       "affiliations": ["Scooby Gang", "Technopagan community"],
@@ -716,6 +739,7 @@
       "notes": "Actress Robia LaMorte portrayed the character throughout her tenure on the show. Jenny's death had a significant impact on Giles and the other characters, and her loss was felt throughout the rest of the series."
     },
     {
+      "id": 12,
       "name": "Drusilla",
       "occupation": "Vampire",
       "affiliations": ["The Whirlwind", "Spike", "Angelus"],
@@ -768,6 +792,7 @@
       "notes": "Actress Juliet Landau portrayed the character throughout her tenure on the show. Drusilla was a fan-favorite character known for her eerie demeanor and unpredictable behavior."
     },
     {
+      "id": 13,
       "name": "Dawn Summers",
       "occupation": "Student",
       "affiliations": ["Scooby Gang", "Watcher's Council"],
@@ -775,7 +800,6 @@
       "gender": "Female",
       "urlImage": "https://www.writeups.org/wp-content/uploads/Dawn-Summers-Buffy-Vampire-Slayer-Michelle-Trachtenberg-c.jpg",
       "birthdate": "January 23, 1986",
-      "birthplace": "Unknown",
       "nationality": "American",
       "abilities": [
         "Reality-warping",
@@ -784,11 +808,13 @@
       ],
       "relationships": [
         {
+          "id": 2,
           "name": "Buffy Summers",
           "relationship_type": "Sister",
           "status": "Alive"
         },
         {
+          "id": 14,
           "name": "Joyce Summers",
           "relationship_type": "Mother",
           "status": "Deceased"
@@ -817,6 +843,7 @@
       "notes": "Actress Michelle Trachtenberg portrayed the character throughout her tenure on the show. Dawn was initially a controversial character among fans, but over time she became a beloved member of the Buffyverse."
     },
     {
+      "id": 14,
       "name": "Joyce Summers",
       "occupation": "Art gallery owner",
       "affiliations": [],
@@ -829,6 +856,7 @@
       "abilities": [],
       "relationships": [
         {
+          "id": 2,
           "name": "Buffy Summers",
           "relationship_type": "Daughter",
           "status": "Alive"
@@ -841,6 +869,11 @@
         {
           "name": "Hank Summers",
           "relationship_type": "Ex-husband",
+          "status": "Alive"
+        },
+        {
+          "name": "Rupert Giles",
+          "relationship_type": "Ex-Lover",
           "status": "Alive"
         }
       ],
@@ -865,6 +898,7 @@
       "notes": "Actress Kristine Sutherland portrayed the character throughout her tenure on the show. Joyce's death was a major turning point in the series and had a lasting impact on the characters and the storyline."
     },
     {
+      "id": 15,
       "name": "The Master",
       "occupation": "Vampire",
       "affiliations": ["Order of Aurelius"],
@@ -900,6 +934,7 @@
       "notes": "Actor Mark Metcalf portrayed The Master in several episodes of Buffy the Vampire Slayer. The character was a primary antagonist in the first season and played a pivotal role in establishing the mythology of the show."
     },
     {
+      "id": 16,
       "name": "Faith Lehane",
       "occupation": "Slayer",
       "affiliations": [
@@ -951,6 +986,7 @@
       "notes": "Actress Eliza Dushku portrayed Faith in multiple episodes of Buffy the Vampire Slayer and its spin-off, Angel. The character was a popular and complex addition to the show's mythology, and is often cited as one of the best-written antiheroes in television history."
     },
     {
+      "id": 17,
       "name": "Richard Wilkins III",
       "occupation": "Mayor of Sunnydale",
       "affiliations": ["The Order of Aurelius", "Wolfram & Hart"],
@@ -991,6 +1027,7 @@
       "notes": "The Mayor was portrayed by actor Harry Groener and was a popular and memorable villain in Buffy the Vampire Slayer's third season. His polite, grandfatherly demeanor masked his true sadistic nature and made him a unique and compelling antagonist."
     },
     {
+      "id": 18,
       "name": "Glory",
       "alias": "Glorificus",
       "species": "Hell-God",
@@ -1038,6 +1075,7 @@
       "notes": "Glory was portrayed by actress Clare Kramer and was a memorable villain in Buffy the Vampire Slayer's fifth season. Her over-the-top personality and love of violence made her a formidable opponent for Buffy and her friends."
     },
     {
+      "id": 19,
       "name": "Riley Finn",
       "species": "Human",
       "gender": "Male",
@@ -1052,6 +1090,7 @@
       ],
       "relationships": [
         {
+          "id": 2,
           "name": "Buffy Summers",
           "relation": "Former girlfriend"
         }
@@ -1081,6 +1120,7 @@
       "notes": "Riley Finn was portrayed by actor Marc Blucas and appeared in Buffy the Vampire Slayer's fourth and fifth seasons. He was initially a controversial character among fans due to his perceived blandness, but has since gained a more positive reputation as a sympathetic and complex character."
     },
     {
+      "id": 20,
       "name": "Jonathan Levinson",
       "species": "Human",
       "gender": "Male",
@@ -1125,6 +1165,7 @@
       "notes": "Jonathan Levinson was portrayed by actor Danny Strong and appeared in multiple episodes throughout Buffy the Vampire Slayer's run. He was a fan-favorite character known for his intelligence, humor, and ultimately tragic fate."
     },
     {
+      "id": 21,
       "name": "Warren Mears",
       "species": "Human",
       "gender": "Male",
@@ -1170,6 +1211,7 @@
       "notes": "Warren Mears was portrayed by actor Adam Busch and appeared in multiple episodes throughout Buffy the Vampire Slayer's run. He was a controversial character due to his actions and was considered by many fans to be one of the show's most despicable villains."
     },
     {
+      "id": 22,
       "name": "Andrew Wells",
       "species": "Human",
       "gender": "Male",
@@ -1193,6 +1235,7 @@
           "relation": "Former friend and partner in crime"
         },
         {
+          "id": 2,
           "name": "Buffy Summers",
           "relation": "Ally and later friend"
         }
@@ -1219,6 +1262,7 @@
       "notes": "Andrew Wells was portrayed by actor Tom Lenk and appeared in multiple episodes throughout Buffy the Vampire Slayer and its spin-off, Angel. He was a recurring character known for his humor and pop culture references, and became a fan favorite despite his earlier villainous actions."
     },
     {
+      "id": 23,
       "name": "Amy Madison",
       "species": "Human (formerly), Rat (formerly), Witch",
       "gender": "Female",
@@ -1239,6 +1283,7 @@
           "relation": "Former friend turned rival"
         },
         {
+          "id": 2,
           "name": "Buffy Summers",
           "relation": "Enemy"
         },
@@ -1265,6 +1310,7 @@
       "notes": "Amy Madison was portrayed by actress Elizabeth Anne Allen and appeared in multiple episodes throughout Buffy the Vampire Slayer. She was a recurring character known for her dark and manipulative nature, and for her tumultuous relationship with Willow."
     },
     {
+      "id": 24,
       "name": "Darla",
       "species": "Vampire",
       "gender": "Female",
@@ -1316,6 +1362,7 @@
       "notes": "Darla was portrayed by actress Julie Benz and appeared in both Buffy the Vampire Slayer and Angel. She was a recurring character known for her complex relationships with Angel and other vampires, as well as her sadistic and manipulative nature."
     },
     {
+      "id": 25,
       "name": "Ben Wilkinson",
       "gender": "Male",
       "occupation": "Doctor",
@@ -1338,6 +1385,7 @@
       "notes": "Ben Wilkinson was portrayed by actor Charlie Weber and appeared in Season 5 of Buffy the Vampire Slayer. He was a complex character who added a tragic dimension to the season's main villain, Glory."
     },
     {
+      "id": 26,
       "name": "Caleb",
       "gender": "Male",
       "occupation": "Preacher",
@@ -1359,6 +1407,7 @@
       "notes": "Caleb was portrayed by actor Nathan Fillion and is known for his distinctive southern accent and unsettling demeanor. His character represents a darker side of religion and underscores the series' themes of misogyny and patriarchal power structures."
     },
     {
+      "id": 27,
       "name": "Lorne",
       "alias": "The Host",
       "species": "Pylean",
@@ -1379,6 +1428,7 @@
       "portrayed_by": "Andy Hallett"
     },
     {
+      "id": 28,
       "name": "Adam",
       "species": "Demon-Human Hybrid",
       "creation": [
@@ -1404,6 +1454,7 @@
       "affiliation": "The Initiative"
     },
     {
+      "id": 29,
       "name": "Willy",
       "occupation": "Bar owner",
       "affiliation": "Demon community",
@@ -1414,6 +1465,7 @@
       "description": "Willy is a cowardly but savvy demon who runs Willy's Place, a demon bar in Sunnydale. He is known to be a source of information for both humans and demons, but his loyalties always lie with whoever is paying him the most."
     },
     {
+      "id": 30,
       "name": "Clem",
       "species": "Demon",
       "affiliation": "Neutral",

@@ -43,7 +43,7 @@ const Deck = () => {
       <Filters setFilter={filterOnSpecies} options={options} />
       <div className="grid grid-cols-3 gap-8 px-8 text-center animate-fadeUp animate-fadeDown max-w-7xl">
         {people.map((person, i) => (
-          <Link to={person.name} key={i}>
+          <Link to={`${person.id}`} key={i}>
             <Card {...person} />
           </Link>
         ))}
