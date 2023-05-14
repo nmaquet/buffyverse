@@ -11,18 +11,21 @@ function getAge(dateStr: Date) {
 }
 
 type Props = {
-  birthday: number | string;
+  birthday?: number | string;
 };
-const Age = ({ birthday }: Props) => {
+const Age = ({ birthday = "October 23, 1980" }: Props) => {
   const age = getAge(birthday);
+  console.log(age, "age");
   return (
     <div className="relative">
-      <div className="absolute w-12 h-12 rounded-full -top-6 left-28 bg-amber-400 ">
+      <p className="absolute z-10 p-2 text-5xl text-black -pl-10 right-20 opacity-80 -rotate-12 -top-8 font-lacquer">
+        17
+      </p>
+      <div className="absolute w-20 h-12 rounded-full -top-6 left-28 bg-amber-400 ">
         <img
-          className="absolute w-8 h-10 pt-2 pl-2 left-1 opacity-20"
+          className="absolute w-10 h-10 pt-2 pl-1 invert left-1 mix-blend-color-dodge"
           src={"src/assets/icons/age.png"}
         />
-        <p className="pt-2 pl-1 text-2xl text-black font-grenze"></p>
       </div>
     </div>
   );

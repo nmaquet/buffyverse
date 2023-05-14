@@ -1,4 +1,4 @@
-import { frontendSpec, demonstrate, skills } from "../about.json";
+import { frontendSpec, demonstrate, skills } from "./about.json";
 const About = ({ title = "About" }) => {
   return (
     <div className="bg-[url('src/assets/frames/texture.jpg')] w-2/3 h-2/3 rounded-3xl bg-cover p-3">
