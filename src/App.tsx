@@ -9,6 +9,7 @@ import RootLayout from "./RootLayout";
 import Docs from "./Pages/Docs";
 import About from "./Pages/About";
 import Deck from "./Pages/Deck";
+import Episode from "./Pages/Episode";
 import Character from "./Pages/Charater";
 import { loader } from "./components/Loader";
 
@@ -16,7 +17,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Deck />} loader={loader} />
-      <Route path="/:char" element={<Character />} loader={loader} />
+      <Route path="/:charId" element={<Character />} loader={loader} />
+      <Route path="/s1" element={<Episode />} loader={loader} />
       <Route path="/about" element={<About />} />
       <Route path="/doc" element={<Docs />} />
       <Route path="*" element={<div>No Match</div>} />
