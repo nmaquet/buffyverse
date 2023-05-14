@@ -1,24 +1,20 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
+import { Filter } from "../Pages/Deck";
 
-const options = [
-  { species: "Human", href: "#", icon: "👩‍🦱" },
-  { species: "Vampire", href: "#", icon: "🧛" },
-  { species: "Werewolf", href: "#", icon: "🐺" },
-  { species: "Witch", href: "#", icon: "🧙" },
-  { species: "Big Bad", href: "#", icon: "👹" },
-  { species: "Demon", href: "#", icon: "👿" },
-  { species: "Watcher", href: "#", icon: "👓" },
-  { species: "Slayer", href: "#", icon: "🗡️" },
-  { species: "Other", href: "#", icon: "👽" },
-];
-
-export const Filters = () => {
+type Props = {
+  options: Filter[];
+  setFilter: (species: string) => void;
+};
+export const Filters: React.FC<Props> = ({ options, setFilter }) => {
   return (
     <>
       <Popover className="relative">
-        <Popover.Button className="inline-flex text-5xl text-white font-longCang gap-x-1">
-          <span>Filters</span>
+        <Popover.Button className="inline-flex text-5xl text-white border-red-700 font-longCang gap-x-1 focus:border-red-700 focus:outline-none">
+          <img
+            className="w-12 invert"
+            src={"https://cdn-icons-png.flaticon.com/512/234/234515.png"}
+          />
         </Popover.Button>
 
         <Transition
@@ -30,17 +26,17 @@ export const Filters = () => {
           leaveFrom="opacity-100 translate-y-0"
           leaveTo="opacity-0 translate-y-1"
         >
-          <Popover.Panel className="absolute z-10 flex w-screen pl-8 mt-5 -translate-x-1/2 left-1/2 max-w-min">
+          <Popover.Panel className="absolute z-10 flex w-screen pl-8 mt-5 -translate-x-3/4 max-w-min">
             <div className="w-48 p-4 text-3xl text-gray-900 bg-cover shadow-lg font-longCang bg-texture shrink rounded-xl ring-1 ring-gray-900/5">
-              {options.map((item) => (
-                <a
+              {options.map((item: Filter) => (
+                <button
                   key={item.species}
-                  href={item.href}
+                  onClick={() => setFilter(item.species)}
                   className="block p-2 hover:text-red-800"
                 >
                   {item.icon}
                   {item.species}
-                </a>
+                </button>
               ))}
             </div>
           </Popover.Panel>
