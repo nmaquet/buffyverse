@@ -4,9 +4,10 @@ interface Location {
 }
 
 export interface Character {
+  id: number;
   name: string;
   alias?: string | string[];
-  catchphrase?: string[];
+  catchPhrase?: string[];
   urlImage?: string;
   occupation?: string;
   affiliation?: string[];
