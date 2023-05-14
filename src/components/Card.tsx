@@ -1,61 +1,77 @@
 import React from "react";
-import Accordion from "./Accordion";
 import { Character } from "../interfaces";
-import Species from "./Species";
+import { Species, Badge } from "./Species";
 import Age from "./Age";
-import Debut from "./Debut";
+import { Link } from "react-router-dom";
 
 const Card: React.FC<Character> = ({
   id,
+  notes,
   name,
-  imageUrl,
-  age,
+  alias,
   species,
-  debut,
-  onClick,
+  occupation,
+  abilities,
+  birthdate,
+  catchPhrase = ["No catchphrase"],
+  urlImage,
 }) => {
-  const moreDetails = {
-    loves: [
-      { name: "Angel", id: 2 },
-      { name: "Demons", id: 666 },
-    ],
-
-    kills: [{ name: "Angel", id: 2 }],
-    RoseFromTheDead: [{ name: "Master", id: 90 }],
-  };
-
   return (
-    <div className="w-[300px] h-[470px] group perspective">
+    <div className="w-[300px] h-[550px] group perspective">
       <div className="relative w-full h-full duration-1000 preserve-3d group-hover:my-rotate-y-180 bg-[url('src/assets/frames/texture.jpg')] bg-cover rounded-3xl">
-        <div className="absolute w-full h-full p-1 border-2 backface-hidden border-amber-400 rounded-3xl ">
-          <div className="p-2 m-2 text-4xl text-black font-almendra">
-            {name}
-          </div>
-          <div className="border-2 border-amber-400 rounded-3xl">
+        <div className="absolute flex-col justify-around w-full h-full p-2 border-2 backface-hidden border-amber-400 rounded-3xl ">
+          <div className="m-3 text-3xl text-black font-almendra">{name}</div>
+          <div className="m-2 border-4 border-amber-400 rounded-3xl">
             <img
-              className="mx-auto mix-blend-multiply rounded-3xl"
-              src="https://flxt.tmsimg.com/assets/p7896403_b1t_v9_aa.jpg"
+              className="object-cover w-[280px] grayscale h-[400px] rounded-2xl"
+              src={urlImage}
               alt=""
             />
           </div>
+          <div className="p-2 text-3xl text-black font-almendra">
+            {alias ? alias[0] : "No alias"}
+          </div>
         </div>
         <div className="absolute w-full h-full overflow-hidden border-2 my-rotate-y-180 backface-hidden border-amber-400 rounded-3xl">
-          <div className="flex-col ">
-            <div className="p-2 mt-2 text-4xl text-black font-almendra">
+          <div className="flex-col justify-between">
+            <div className="p-2 mt-2 mb-4 text-3xl text-black font-almendra">
               {name}
             </div>
-            <div className="mt-4">
-              <Age age={age} />
-              <Species species={species} />
-              <Debut debut={debut} />
-              <div className="flex">
-                <Accordion type="Kills" options={moreDetails.kills} />
-                <Accordion type="Rip" options={moreDetails.RoseFromTheDead} />
-                <Accordion type="Loves" options={moreDetails.loves} />
+            <div className="w-[280px] h-[400px]  border-amber-400 rounded-3xl border-2 ml-2">
+              <Age birthday={birthdate} />
+              {/* <Species species={species} /> */}
+              <br />
+              <div className="flex text-xl">
+                <div className="p-1 m-1 font-almendra">Occupations: </div>
+                <div className="flex p-1 m-1 text-l rounded-3xl font-lacquer">
+                  {occupation}
+                </div>
               </div>
+              <br />
+              <div className="flex-col text-xl">
+                <div className="p-1 m-1 font-almendra">Abilities: </div>
+                <div className="flex p-1 m-1 text-l rounded-3xl font-lacquer">
+                  {abilities}
+                </div>
+              </div>
+              <Link
+                to={`/s1`}
+                className="p-1 text-2xl text-black font-almendra"
+              >
+                First Seen: S01E01
+              </Link>
+              {/* <Debut debut={debut} /> */}
+              {/* <div className="flex justify-evenly">
+                <button className="font-lacquer">Kills</button>
+                <button className="font-lacquer">RIP</button>
+                <button className="font-lacquer">Loves</button>
+              </div> */}
             </div>
-            <div className="p-2 text-2xl text-black border-t-2 border-amber-400 font-almendra">
-              She Who Hangs Out in Graveyards
+            <div className="ml-3">
+              <Badge icon={species} />
+            </div>
+            <div className="p-1 mt-4 text-xl text-black font-almendra">
+              {catchPhrase[0]}
             </div>
           </div>
         </div>
